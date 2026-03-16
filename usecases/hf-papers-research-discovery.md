@@ -8,12 +8,12 @@ This workflow combines two skills to create a full research discovery pipeline:
 - Search papers by keyword to find relevant work on any topic
 - Get full paper metadata: abstract, authors, GitHub repos, community upvotes, AI-generated summaries
 - Read community discussion and comments on any paper
-- Deep-read the full LaTeX source of any paper via its arXiv ID (using arxiv-reader)
+- Deep-read the full LaTeX source of any paper via its arXiv ID (using arxiv-source)
 
 ## Skills you Need
 
 - [hf-papers](https://github.com/openclaw/skills/tree/main/skills/willamhou/hf-papers) skill (4 tools: `hf_daily_papers`, `hf_search_papers`, `hf_paper_detail`, `hf_paper_comments`)
-- [arxiv-reader](https://github.com/openclaw/skills/tree/main/skills/willamhou/arxiv-source) skill (3 tools: `arxiv_fetch`, `arxiv_sections`, `arxiv_abstract`) — for full paper text
+- [arxiv-source](https://github.com/openclaw/skills/tree/main/skills/willamhou/arxiv-source) skill (3 tools: `arxiv_fetch`, `arxiv_sections`, `arxiv_abstract`) — for full paper text
 
 No Docker or authentication required — both skills use public APIs with local caching.
 
@@ -42,7 +42,7 @@ I want to stay on top of ML research. Here's my daily workflow:
    - Ask if I want a deep read
 
 4. For deep reads:
-   - Fetch the full paper via arxiv-reader
+   - Fetch the full paper via arxiv-source
    - Summarize key contributions, methodology, and results
    - Note any linked code repos I should check out
 
